@@ -5,11 +5,14 @@
 int main()
 {
 	Point p1(1, 2);
-	Point p2;
-	p2 = p1;
+	Point p2 = p1;
+	
 
 	std::cout << "p1=" << p1 << std::endl; //add the point
 	std::cout << "p2=" << p2 << std::endl; //add the point
+
+	p2 = p2;
+	std::cout << "p2=" << p2 << std::endl;
 
 	return 0;
 }

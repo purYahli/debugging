@@ -28,6 +28,11 @@ Point::~Point()
 
 Point& Point::operator=(const Point& other)
 {
+	if (this == &other)
+	{
+		return *this;   // guard against self assignment
+	}
+
 	delete[] _coord; //add[]
 	_coord = new int[2];
 	memcpy(_coord, other._coord, 2 * sizeof(int)); //needed 2 * sizeof(int) intstead of 2
