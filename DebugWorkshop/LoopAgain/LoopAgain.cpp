@@ -2,7 +2,7 @@
 
 int main()
 {
-	unsigned int size = 0;
+	int size = 0; //size might be negative, fix to int instead of unsignd
 
 	int t1 = 0, t2 = 1;
 
