@@ -2,6 +2,9 @@
 #include <iostream>
 #include <stdexcept>
 
+#define BUF_SIZE 20
+
+
 char* safe_string_copy(char* dest, unsigned int destsize, char* src)
 {
 	unsigned int srcsize = (unsigned int)strlen(src);
@@ -15,7 +18,6 @@ char* safe_string_copy(char* dest, unsigned int destsize, char* src)
 }
 
 
-#define BUF_SIZE 20
 void part2()
 {
 	char password[] = "secret";
